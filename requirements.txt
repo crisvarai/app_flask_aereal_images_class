@@ -1,4 +1,4 @@
-https://download.pytorch.org/whl/cpu
+-f https://download.pytorch.org/whl/cpu
 Flask
 flask-cors
 gunicorn
