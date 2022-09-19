@@ -7,14 +7,14 @@ from PIL import Image
 app = Flask(__name__)
 CORS(app)
 
+model = torch.jit.load('model.zip')
+
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    
-    model = torch.jit.load('model.zip')
 
     # load image
     img = Image.open(request.files['file'].stream).convert(
