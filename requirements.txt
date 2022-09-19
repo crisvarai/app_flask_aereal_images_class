@@ -4,4 +4,4 @@ flask-cors
 gunicorn
 numpy
 Pillow
-torch==1.6.0+cpu
+torch==1.12.1
